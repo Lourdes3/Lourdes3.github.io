@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,14 +12,40 @@
 	<title>fewd_final_project</title>
 </head>
 <body>
+	<!--main header-->
 	<header class="site_header">
 			<h1 class="logo">Lourdes Fragrance</h1>
-				<ul class="nav_bar">
-					<li id="menu_1">perfume</li>
-					<li id="menu_2">candles</li>
-					<li id="menu_3">gift sets</li>
-					<li id="mission">our mission</li>
-				</ul>
+				<section class="nav_bar">
+					<div id="menu_1">
+						<div class="dropdown">
+  							<button class="dropbtn">Perfumes</button>
+  								<div class="dropdown-content">
+    								<a href="#">Day Dream</a>
+    								<a href="#">Amber Haze</a>
+ 							    </div>
+						</div>
+					</div>
+
+					<div id="menu_2">
+						<div class="dropdown">
+  							<button class="dropbtn">Incense</button>
+  								<div class="dropdown-content">
+    								<a href="#">Amber Haze</a>
+ 							    </div>
+						</div>	
+					</div>
+
+					<div id="menu_3">
+						<div class="dropdown">
+  							<button class="dropbtn">Candles</button>
+  								<div class="dropdown-content">
+    								<a href="#">Eucalyptus Linen</a>
+ 							    </div>
+						</div>
+					</div>
+
+					<div id="mission">Our Mission</div>
+				</section>
 		<section>
 			<div id="checkbox">
 				<div id="menu_checkbox">
@@ -29,6 +56,7 @@
 			</div>
 		</section>
 	</header>
+	<!-- product lists -->
 	<div class="products">
 		<h1 class="limited_edition">limited edition products</h1>
 		<ul class="products_list">
@@ -45,28 +73,47 @@
 				<img src="https://images.unsplash.com/photo-1620733719370-0c388a50fe9c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHBlcmZ1bWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="amber_haze_img" id="amber_haze_id" class="amber_haze_class">
 			</li>
 					<li class="eucalyptus_list">
-				<p>Eucalyptus Linen: A clean light linen scent to freshen your home with a 70 hour burn time. Fragrance Family: Green Key Notes: eucalyptus, salt, cactus, lily of the valley 75$</p>
+				<p class="eucalyptus_title">Eucalyptus Linen: A clean light linen scent to freshen your home with a 70 hour burn time. Fragrance Family: Green Key Notes: eucalyptus, salt, cactus, lily of the valley 75$</p>
 				<img src="https://images.unsplash.com/photo-1623100583623-9a74db9ba71b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhbmRsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="eucalyptus_img" class="eucalyptus_class">
 			</li>
 		</ul>
 	</div>
-	<section class="mission_statement">
-		<h1>Our Mission</h1>
-			<p>In its' simplest form, our mission is to represent a future of elegant, sustainable fragrances, provide our customers with high-quality products, and redefine the roots of luxury.</p>
-			<p>We do this through cultivating fair trade, ethically sourced ingredients. Providing living wages and benefits to our employees, ensuring the quality of each of our handcrafted products. As well as maintaining a standard of excellence through our cruelty-free testing facilities.</p>
-			<p>Lastly, we rely on the creativity of world-class master perfumers. That demonstrate consistent and outstanding levels of craftsmanship into our one-of-a-kind fragrances.</p>
-	</section>
-	<footer class="lower_footer"> 
-		<section>
-			<div>
-				<ul>
-					<li>Newsletter</li>
-					<li>Return Policy</li>
-				</ul>
+
+	<!-- mission statement--> 
+		<button type="button" class="collapsible">Our Mission</button>
+			<div class="content">
+			<p class="mission_text">In its' simplest form, our mission is to represent a future of elegant, sustainable fragrances, provide our customers with high-quality products, and redefine the roots of luxury. We do this through cultivating fair trade, ethically sourced ingredients. Providing living wages and benefits to our employees, ensuring the quality of each of our handcrafted products. As well as maintaining a standard of excellence through our cruelty-free testing facilities. Lastly, we rely on the creativity of world-class master perfumers. That demonstrate consistent and outstanding levels of craftsmanship into our one-of-a-kind fragrances. © 2021 Lourdes Fragrance - All rights reserved.</p>
 			</div>
-		</section>
-			<p>© 2021 Lourdes Fragrance S.p.A. - All rights reserved. SIAE LICENSE # XXXX/X/XXXX and XXXX/X/XXXX</p>
+	
+
+	<!-- Footer -->
+	<footer class="lower_footer"> 
+			<div class="footer">
+			
+				<!-- Button trigger modal for Newsletter -->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Join Our Text Newsletter
+				</button>
+
+			<!-- Modal for Newsletter -->
+			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  			<div class="modal-dialog">
+   			<div class="modal-content">
+      		<div class="modal-header">
+       			<h5 class="modal-title" id="staticBackdropLabel">Our Newsletter</h5>
+        		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      		</div>
+     		<div class="modal-body">
+      			Our exclusive Newsletter will keep you in know of all of our must have fragrances. As well as give you a look behind the scenes into how we assure product quality, with exculsive content. Text to INSIDER to (833) 417-7427. 
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      		</div>
+    		</div>
+  			</div>
+			</div>	
+			</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
