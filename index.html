@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<!--stylesheet-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- my css-->
+
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- source code pro google font-->
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	<title>fewd_final_project</title>
 </head>
+
 <body>
 	<!--main header-->
+
 	<header class="site_header">
 			<h1 class="logo">Lourdes Fragrance</h1>
 				<section class="nav_bar">
@@ -43,10 +53,9 @@
  							    </div>
 						</div>
 					</div>
-
-					<div id="mission">Our Mission</div>
 				</section>
-		<section>
+
+		<section class="hamburger">
 			<div id="checkbox">
 				<div id="menu_checkbox">
 					<div></div>
@@ -56,42 +65,72 @@
 			</div>
 		</section>
 	</header>
-	<!-- product lists -->
+
+	<!-- limited edition products -->
+
 	<div class="products">
 		<h1 class="limited_edition">limited edition products</h1>
-		<ul class="products_list">
-			<li class="day_dream_list">
+			<ul class="products_list">
+
+				<li class="day_dream_list">
 				<p class="day_dream_title">Our Newest Fragrance - Daydream: A light subtle fragrance to last all throughout your daydreams. 4 fl oz Fragrance Family: soft floral Key Notes: orange, vanilla, jasmine 85$</p>
+
+				<button type="button" class="buy_now_button" data-toggle="tooltip" data-placement="bottom" title="sold out">Buy Now</button>
+
 				<img src="https://images.unsplash.com/photo-1617659258427-1d971d2d893a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG1pbmltYWwlMjBwZXJmdW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="day_dream_img" id="day_dream_id" class="day_dream_class">
-			</li> 
-			<li class="aqua_tofana_list">
-				<p class="aqua_tofana_title">Aqua Tofana: A refreshing scent best warn on hydrated skin, equated best to the feel of morning dew. 4 fl oz Frangrance Family: aromatic Key Notes: peppermint, sandalwood, lemon 90$</p>
+				</li> 
+
+				<li class="aqua_tofana_list">
+				<p class="aqua_tofana_title">Aqua Tofana: A refreshing scent best worn on hydrated skin, equated best to the feel of morning dew. 4 fl oz Frangrance Family: aromatic Key Notes: peppermint, sandalwood, lemon 90$</p>
+
+				<button type="button" class="buy_now_button" data-toggle="tooltip" data-placement="bottom" title="sold out">Buy Now</button>
+
+				<div class="tooltip top" role="tooltip">
+ 					<div class="tooltip-arrow"></div>
+  					<div class="tooltip-inner">Some tooltip text!</div>
+				</div>
+
 				<img src="https://media.istockphoto.com/photos/bottle-of-essence-perfume-on-white-background-with-sunlight-and-of-picture-id1221444486?b=1&k=20&m=1221444486&s=170667a&w=0&h=vW7t2Q9BnHKWQlMN_aP3tk9F6pCde3AdtIRMYuUDP84=" alt="aqua_tofana_img" id="aqua_tofana_id" class="aqua_tofana_class">
-			</li>
-			<li class="amber_haze_list">
+				</li>
+
+				<li class="amber_haze_list">
 				<p class="amber_haze_title">Amber Haze Incense: A rich woodsy soothing smoke to use to bring a calmness to your space. Comes in a pack of 12. Fragrance Family: Mossy Woody Key Notes: clove, oak moss, cashmere musk 45$</p>
+
+				<button type="button" class="buy_now_button" data-toggle="tooltip" data-placement="bottom" title="sold out">Buy Now</button>
+
 				<img src="https://images.unsplash.com/photo-1620733719370-0c388a50fe9c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHBlcmZ1bWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="amber_haze_img" id="amber_haze_id" class="amber_haze_class">
-			</li>
-					<li class="eucalyptus_list">
+				</li>
+
+				<li class="eucalyptus_list">
 				<p class="eucalyptus_title">Eucalyptus Linen: A clean light linen scent to freshen your home with a 70 hour burn time. Fragrance Family: Green Key Notes: eucalyptus, salt, cactus, lily of the valley 75$</p>
+
+				<button type="button" class="buy_now_button" data-toggle="tooltip" data-placement="bottom" title="sold out">Buy Now</button>
+
 				<img src="https://images.unsplash.com/photo-1623100583623-9a74db9ba71b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhbmRsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="eucalyptus_img" class="eucalyptus_class">
-			</li>
-		</ul>
+				</li>
+			</ul>
 	</div>
 
 	<!-- mission statement--> 
+
+	<section class="mission_statement">
 		<button type="button" class="collapsible">Our Mission</button>
 			<div class="content">
-			<p class="mission_text">In its' simplest form, our mission is to represent a future of elegant, sustainable fragrances, provide our customers with high-quality products, and redefine the roots of luxury. We do this through cultivating fair trade, ethically sourced ingredients. Providing living wages and benefits to our employees, ensuring the quality of each of our handcrafted products. As well as maintaining a standard of excellence through our cruelty-free testing facilities. Lastly, we rely on the creativity of world-class master perfumers. That demonstrate consistent and outstanding levels of craftsmanship into our one-of-a-kind fragrances. © 2021 Lourdes Fragrance - All rights reserved.</p>
+				<p class="mission_text">In its' simplest form, our mission is to represent a future of elegant, sustainable fragrances, provide our customers with high-quality products, and redefine the roots of luxury. We do this through cultivating fair trade, ethically sourced ingredients. Providing living wages and benefits to our employees, ensuring the quality of each of our handcrafted products. As well as maintaining a standard of excellence through our cruelty-free testing facilities. Lastly, we rely on the creativity of world-class master perfumers. That demonstrate consistent and outstanding levels of craftsmanship into our one-of-a-kind fragrances. © 2021 Lourdes Fragrance - All rights reserved.</p>
 			</div>
-	
+	</section>
+
+	<!-- carousel -->
+
+
 
 	<!-- Footer -->
+
 	<footer class="lower_footer"> 
 			<div class="footer">
 			
 				<!-- Button trigger modal for Newsletter -->
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Join Our Text Newsletter
+				<button type="button" class="btn_primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Join Our Text Newsletter
 				</button>
 
 			<!-- Modal for Newsletter -->
@@ -106,13 +145,21 @@
       			Our exclusive Newsletter will keep you in know of all of our must have fragrances. As well as give you a look behind the scenes into how we assure product quality, with exculsive content. Text to INSIDER to (833) 417-7427. 
       		</div>
       		<div class="modal-footer">
-        		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        		<button type="button" class="btn_secondary" data-bs-dismiss="modal">Close</button>
       		</div>
     		</div>
   			</div>
 			</div>	
 			</div>
+
+			<section class="lower_copyright">
+				<div class="copyright_text">
+				<p>© 2021 Lourdes Fragrance - All rights reserved.</p>
+				</div>	
+			</section>
+	
 	</footer>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>

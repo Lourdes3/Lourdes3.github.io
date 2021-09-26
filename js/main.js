@@ -1,4 +1,5 @@
-console.log(Lourdes Fragrance)
+//javacript for collapsible mission statment 
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
