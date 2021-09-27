@@ -95,6 +95,10 @@ p {
 	background-color: burlywood;
 }
 
+.hamburger {
+	border: none;
+	background-color: white;
+}
 #menu_checkbox {
     margin: 10px;
     height: 100%;
@@ -129,10 +133,6 @@ p {
     margin-bottom: 0;
 }
 
-.buy_now_button{
-
-}
-
 .day_dream_class, .aqua_tofana_class, .amber_haze_class, .eucalyptus_class {
 	display: block;
 	margin-left: auto;
@@ -159,10 +159,12 @@ p {
    	flex-direction: column;
  	justify-content: space-between;
 }
+
 .buy_now_button {
 	background-color: white;
 	border: 1px solid black;
 }
+
 .collapsible {
     cursor: pointer;
     padding: 18px;
@@ -218,8 +220,8 @@ p {
 	display: none;
   }
 }
-@media (min-width: 1000px){
-	.hamburger{
+@media (min-width: 1000px) {
+	.hamburger {
 		display: none;
 	}
 }
